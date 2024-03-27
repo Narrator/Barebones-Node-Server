@@ -18,6 +18,6 @@
   ],
   "framework": {
     "name": "node",
-    "version": "18.x"
+    "version": "18.17.0"
   }
 }
