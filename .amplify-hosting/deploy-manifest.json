@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "computeResources": [
+    {
+      "name": "default",
+      "runtime": "nodejs18.x",
+      "entrypoint": "server.js"
+    }
+  ],
+  "routes": [
+    {
+      "path": "/*",
+      "target": {
+        "kind": "Compute",
+        "src": "default"
+      }
+    }
+  ],
+  "framework": {
+    "name": "node",
+    "version": "18.x"
+  }
+}

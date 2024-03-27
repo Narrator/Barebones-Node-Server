@@ -1,0 +1,13 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - echo "no-op"
+    build:
+      commands:
+        - echo "no-op"
+  artifacts:
+    baseDirectory: .amplify-hosting
+    files:
+      - '**/*'
