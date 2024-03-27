@@ -1,5 +1,8 @@
 const http = require('http');
 
+// Start timer
+console.time('Ready in');
+
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/plain');
@@ -7,4 +10,7 @@ const server = http.createServer((req, res) => {
   res.end();
 });
 
-server.listen(3000, '127.0.0.1');
+server.listen(3000, '127.0.0.1', () => {
+  console.timeEnd('Ready in');
+});
+
